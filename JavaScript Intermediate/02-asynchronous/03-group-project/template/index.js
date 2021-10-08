@@ -33,12 +33,20 @@ const createPostElement = (thumbnail, post) => {
   elCol.appendChild(elCard);
 
   // EDIT HERE
+  elCardTitle.innerHTML = post.title;
+  elCardImg.setAttribute('src', thumbnail);
+  elCardBtn.setAttribute('href', '/post.html?post_id=' + post.id);
 
   return elCol;
 };
 
 const renderPosts = async () => {
   // EDIT HERE
+  let posts = await getPosts();
+  for(let i = 0; i < 16; i++){
+    let thumbnail = await getRandomPic();
+    elDaftarBerita.appendChild(createPostElement(thumbnail, posts[i]));
+  }
 };
 
 renderPosts();

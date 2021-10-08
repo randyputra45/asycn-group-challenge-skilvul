@@ -1,17 +1,45 @@
 export const getPosts = async () => {
-  // EDIT HERE
-};
+  try {
+    // let response = await fetch('https://jsonplaceholder.typicode.com/posts?_page=0&_limit=16', { 
+    let response = await fetch('https://jsonplaceholder.typicode.com/posts', { 
+    method: 'GET',
+    });
+    let jsonResponse = await response.json();
+    return jsonResponse;
+  } 
+  catch (error) {
+      console.log(error);
+  }
+}
 
 export const getPost = async (post_id) => {
   // EDIT HERE
 };
 
 export const getPostComments = async (post_id) => {
-  // EDIT HERE
+  try {
+    let response = await fetch('https://jsonplaceholder.typicode.com/comments', { 
+    method: 'GET',
+    });
+    let jsonResponse = await response.json();
+    return jsonResponse;
+  } 
+  catch (error) {
+      console.log(error);
+  }
 };
 
 export const getAuthor = async (user_id) => {
-  // EDIT HERE
+  try {
+    let response = await fetch('https://jsonplaceholder.typicode.com/users', { 
+    method: 'GET',
+    });
+    let jsonResponse = await response.json();
+    return jsonResponse;
+  } 
+  catch (error) {
+      console.log(error);
+  }
 };
 
 export const getPostsByAuthor = async (author_id) => {
