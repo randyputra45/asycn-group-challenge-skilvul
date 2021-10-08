@@ -1,6 +1,6 @@
 ## Expected Result
 
-![expected-result](https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/lesson/full-stack-assignment/code-challenge-asynchronous-01.gif)
+![expected-result](https://skilvul-prod-01.s3.ap-southeast-1.amazonaws.com/lesson/full-stack-assignment/code-challenge-asynchronous-05.gif)
 
 ## Specs
 Buatlah aplikasi website sesuai desain dan contoh data di atas dimana kita akan mengambil data dari 2 External API yaitu:
